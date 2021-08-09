@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+
+
+</head>
+
+<body>
+    dd
+    <!--js.if문 공식
+        if(식식식 === true or false ){true일때의 값}
+                         else{false일때의 값}
+        -->
+    <input id="nightday" type="button" value="night" onclick="
+    if(document.querySelector('#nightday').value === 'night'){
+document.querySelector('body').style.backgroundColor = 'black';
+document.querySelector('body').style.color = 'white';
+document.querySelector('#nightday').value = 'day';}
+else{
+document.querySelector('body').style.backgroundColor = 'white';
+document.querySelector('body').style.color = 'black';
+document.querySelector('#nightday').value='night';
+}">
+    <input type="button" value="핑크모드" onclick="
+    var target= document.querySelector('body')
+   if(this.value==='핑크모드'){
+target.style.backgroundColor='pink';
+target.style.color='white';
+this.value='돌아가기';}
+else{
+target.style.backgroundColor='white';
+target.style.color='black';
+this.value='핑크모드';
+
+
+
+
+}">
+    <input type="button" value="블루모드" onclick="
+    var target= document.querySelector('body')
+if(this.value==='블루모드'){
+    target.style.backgroundColor='blue';
+    target.style.color='white';
+    this.value='돌아가기';}
+else{
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    this.value='블루모드';
+}">
+</body>
+
+</html>

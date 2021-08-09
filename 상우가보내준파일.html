@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SPC</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+     <!-- section start -->
+     <div class="section">
+        <div class="popup">
+            <ul>
+                <li>
+                    <div class="title">사진<span style="font-size:10px; color:red">(필수)</span></div>
+                    <label class="find" for="file">
+                        <input type="file" id="file">
+                        <span id="btn-camera">
+                            <img alt="cost image" id="costImage"/><!-- 이미지 넣는곳입니다. -->
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <dl>
+                        <dt>타입</dt>
+                        <dd>
+                            <select id="inputType">
+                                <option value="">선택</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>일자</dt>
+                        <dd>
+                            <div id="inputDate"></div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>금액</dt>
+                        <dd>
+                            <input type="text" id="inputCost">
+                        </dd>
+                    </dl>
+                </li>
+                <li class="h_scroll">
+                    <div class="title">비고</div>
+                    <div class="list_wrap list_wrap_8 table_fixed">
+                        <div class="table select_table">
+                            <table>
+                                <colgroup>
+                                    <col width="33.33%">
+                                    <col width="33.33%">
+                                    <col width="33.33%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>타입</th>
+                                        <th>일자</th>
+                                        <th>금액</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="trList">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- section end -->
+    <!-- footer start -->
+    <div class="footer">
+        <button type="button" id="btn-save">저 장</button>
+    </div>
+    <!-- footer end -->
+</body>
+
+</html>
