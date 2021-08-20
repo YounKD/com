@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a237e;
+    padding: 8px 12px;
+    
+}
+.navbar-main{
+    font-size:24px;
+}
+.navbar-main i{
+    font-size: 30px;
+    color: orange;
+    
+}
+.navbar-menu{
+    display:flex;
+    padding:0px;
+    
+}
+.navbar-menu li{
+    padding:8px 12px;
+    list-style: none;
+}
+.navbar-menu li:hover{
+    border-radius: 20px;
+    background-color: orange;
+}   
+
+.navbar-icons{
+    display: flex;
+    list-style: none;
+    color: orange;
+    font-size: 24px;
+    padding:0px;
+    
+
+}
+.navbar-icons i{
+    padding: 8px 12px;
+}
+.toglebutton{
+    display: none;
+    position: absolute;
+    right:32px;
+    font-size: 24px;
+    color: orange;
+}
+@media screen and (max-width:1000px){
+    .navbar{
+        flex-direction: column;
+        padding: 12px 24px;
+        align-items: flex-start;
+        
+    }
+    .navbar-main{
+        
+        
+    }
+    .navbar-menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+        
+    }
+    .navbar-menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-icons{
+        display: none;
+        justify-content: center;
+        width:100%;
+        
+       
+    }
+    .toglebutton{
+        display: block;
+    }
+    
+    .navbar-menu.active,
+    .navbar-icons.active{
+        display: flex;
+    }
+
+
+}
+    
+
